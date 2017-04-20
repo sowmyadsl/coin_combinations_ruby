@@ -25,11 +25,6 @@ class Fixnum
   end
   returned_change['pennies'][0][1] = returned_change['pennies'][0][1] + cents
   returned_change['pennies'][0][0] = returned_change['pennies'][0][0] - cents
-
-  # returned_change['quarters'].push(num_of_quarters)
-  # returned_change['dimes'].push(num_of_dimes)
-  # returned_change['nickels'].push(num_of_nickels)
-  # returned_change['pennies'].push(cents)
   returned_change
   end
 end
