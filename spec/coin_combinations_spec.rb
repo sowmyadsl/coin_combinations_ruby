@@ -1,6 +1,6 @@
 require ('coin')
 require ('rspec')
-require ('pry')
+
 
 describe("Fixnum#change") do
 
