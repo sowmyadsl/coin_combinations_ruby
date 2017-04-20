@@ -1,33 +1,33 @@
 <h1>Your change is:</h1>
 <%
-quarters = @userinput['quarters'][0][1].to_s.concat(' quarter')
-dimes = @userinput['dimes'][0][1].to_s.concat(' dime')
-nickels = @userinput['nickels'][0][1].to_s.concat(' nickel')
-pennies = @userinput['pennies'][0][1].to_s.concat(' pennies')
+quarters = @userinput['quarters'][1].to_s.concat(' quarter')
+dimes = @userinput['dimes'][1].to_s.concat(' dime')
+nickels = @userinput['nickels'][1].to_s.concat(' nickel')
+pennies = @userinput['pennies'][1].to_s.concat(' pennies')
 %>
 
-<% if @userinput['quarters'][0][1] > 1 %>
+<% if @userinput['quarters'][1] > 1 %>
 <h3><%= quarters.concat('s') %></h3>
-<% elsif @userinput['quarters'][0][1] == 1 %>
+<% elsif @userinput['quarters'][1] == 1 %>
 <h3><%= quarters %></h3>
 <% end %>
 
-<% if @userinput['dimes'][0][1] > 1 %>
+<% if @userinput['dimes'][1] > 1 %>
 <h3><%= dimes.concat('s') %></h3>
-<% elsif @userinput['dimes'][0][1] == 1 %>
+<% elsif @userinput['dimes'][1] == 1 %>
 <h3><%= dimes %></h3>
 <% end %>
 
-<% if @userinput['nickels'][0][1] > 1 %>
+<% if @userinput['nickels'][1] > 1 %>
 <h3><%= nickels.concat('s') %></h3>
-<% elsif @userinput['nickels'][0][1] == 1 %>
+<% elsif @userinput['nickels'][1] == 1 %>
 <h3><%= nickels %></h3>
 <% end %>
 
-<% if @userinput['pennies'][0][1] > 1 %>
+<% if @userinput['pennies'][1] > 1 %>
 <h3><%= pennies %></h3>
-<% elsif @userinput['pennies'][0][1] == 1 %>
+<% elsif @userinput['pennies'][1] == 1 %>
 <h3>1 penny</h3>
 <% end %>
 
-<em>(The coin machine has <%= @userinput['quarters'][0][0] %> quarters, <%= @userinput['dimes'][0][0] %> dimes, <%= @userinput['nickels'][0][0] %> nickels, and <%= @userinput['pennies'][0][0] %> pennies remaining)</em>
+<em>(The coin machine has <%= @userinput['quarters'][0] %> quarters, <%= @userinput['dimes'][0] %> dimes, <%= @userinput['nickels'][0] %> nickels, and <%= @userinput['pennies'][0] %> pennies remaining)</em>
